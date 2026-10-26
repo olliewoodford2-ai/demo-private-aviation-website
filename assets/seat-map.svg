@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 1360" fill="none">
+  <defs>
+    <linearGradient id="line" x1="30" y1="80" x2="490" y2="1280" gradientUnits="userSpaceOnUse"><stop stop-color="#E7CDA3"/><stop offset=".55" stop-color="#A88457"/><stop offset="1" stop-color="#E7CDA3"/></linearGradient>
+  </defs>
+  <g stroke="url(#line)" stroke-width="2">
+    <path d="M260 22c-119 0-214 87-214 201v916c0 109 94 199 214 199s214-90 214-199V223C474 109 379 22 260 22Z" stroke-width="3"/>
+    <path d="M260 43c-105 0-190 77-190 179v914c0 96 85 177 190 177s190-81 190-177V222c0-102-85-179-190-179Z" stroke-opacity=".45"/>
+    <path d="M85 235h350M79 1047h362M87 1110h346" stroke-opacity=".55"/>
+    <rect x="128" y="105" width="264" height="93" rx="20"/>
+    <path d="M151 130h70v42h-70zM299 130h70v42h-70zM239 112v80" stroke-opacity=".7"/>
+    <rect x="116" y="237" width="288" height="131" rx="26"/>
+    <path d="M164 250v105M356 250v105M116 302h288" stroke-opacity=".48"/>
+    <rect x="155" y="393" width="210" height="113" rx="24"/>
+    <circle cx="260" cy="449" r="31"/>
+    <path d="M155 449h74M291 449h74" stroke-opacity=".65"/>
+    <rect x="105" y="537" width="132" height="124" rx="22"/>
+    <rect x="283" y="537" width="132" height="124" rx="22"/>
+    <path d="M105 598h132M283 598h132" stroke-opacity=".55"/>
+    <rect x="105" y="687" width="132" height="124" rx="22"/>
+    <rect x="283" y="687" width="132" height="124" rx="22"/>
+    <path d="M105 748h132M283 748h132" stroke-opacity=".55"/>
+    <rect x="105" y="837" width="132" height="124" rx="22"/>
+    <rect x="283" y="837" width="132" height="124" rx="22"/>
+    <path d="M105 898h132M283 898h132" stroke-opacity=".55"/>
+    <rect x="102" y="1071" width="118" height="111" rx="12"/>
+    <rect x="300" y="1071" width="118" height="111" rx="12"/>
+    <path d="M119 1087h84v80h-84zM317 1087h84v80h-84zM231 1084h58v106h-58z" stroke-opacity=".55"/>
+    <path d="M46 293h22M46 1023h22M452 293h22M452 1023h22" stroke-width="4"/>
+  </g>
+  <g fill="#d9c29d" fill-opacity=".16" stroke="#e8d1a9" stroke-opacity=".4">
+    <rect x="126" y="553" width="90" height="92" rx="16"/><rect x="304" y="553" width="90" height="92" rx="16"/>
+    <rect x="126" y="703" width="90" height="92" rx="16"/><rect x="304" y="703" width="90" height="92" rx="16"/>
+    <rect x="126" y="853" width="90" height="92" rx="16"/><rect x="304" y="853" width="90" height="92" rx="16"/>
+  </g>
+</svg>

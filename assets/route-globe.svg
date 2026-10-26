@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 720" fill="none">
+  <defs>
+    <radialGradient id="sphere" cx=".37" cy=".27" r=".8"><stop stop-color="#5c5146" stop-opacity=".68"/><stop offset=".58" stop-color="#242425" stop-opacity=".82"/><stop offset="1" stop-color="#08090a"/></radialGradient>
+    <linearGradient id="gold" x1="140" y1="106" x2="579" y2="624" gradientUnits="userSpaceOnUse"><stop stop-color="#f1d6a9"/><stop offset="1" stop-color="#9d7a4f"/></linearGradient>
+    <clipPath id="sphereClip"><circle cx="360" cy="360" r="292"/></clipPath>
+  </defs>
+  <circle cx="360" cy="360" r="292" fill="url(#sphere)" stroke="#d1b386" stroke-opacity=".62" stroke-width="1.5"/>
+  <g clip-path="url(#sphereClip)" stroke="#c5a77a" stroke-opacity=".26">
+    <ellipse cx="360" cy="360" rx="138" ry="292"/>
+    <ellipse cx="360" cy="360" rx="240" ry="292"/>
+    <ellipse cx="360" cy="360" rx="292" ry="112"/>
+    <ellipse cx="360" cy="360" rx="292" ry="202"/>
+    <path d="M56 360h608M83 258h554M83 462h554"/>
+    <path d="M185 185c25 16 32 45 57 54 19 7 25 22 13 39l-29 42 23 29-30 46-22 79-36 40-5 74 42 34 39-24 18-79 28-34-3-47 34-41-6-50 38-35-7-62-49-8-20-51-42-29-43 12-29-23-38 5-33 29-17 48Z" fill="#c8b18c" fill-opacity=".14"/>
+    <path d="M341 251l42-31 50 7 28 36 61 13 31 54-15 50-37 13-20 44-47 11-10 67-42 29-31-31 8-51-28-43 18-47-32-35 24-42-19-43Z" fill="#c8b18c" fill-opacity=".13"/>
+    <path d="M482 474l30 15 12 43-27 22-34-21 4-41 15-18Z" fill="#c8b18c" fill-opacity=".15"/>
+    <path d="M0 540c153-90 272-194 377-201 93-6 145 41 343-110" stroke="url(#gold)" stroke-width="2" stroke-dasharray="7 8"/>
+    <path d="M76 220c172 107 227 103 296 121 99 27 142 65 278 174" stroke="url(#gold)" stroke-width="1.6" stroke-dasharray="5 9"/>
+  </g>
+  <g fill="#f1d9b2" stroke="#171615" stroke-width="5">
+    <circle cx="179" cy="421" r="6"/><circle cx="377" cy="339" r="6"/><circle cx="590" cy="229" r="6"/><circle cx="658" cy="516" r="6"/><circle cx="104" cy="247" r="6"/>
+  </g>
+  <circle cx="360" cy="360" r="305" stroke="#e1c393" stroke-opacity=".14"/>
+</svg>

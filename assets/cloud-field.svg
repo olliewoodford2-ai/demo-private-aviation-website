@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080" fill="none">
+  <defs>
+    <linearGradient id="sky" x1="960" y1="0" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#111416"/>
+      <stop offset=".34" stop-color="#242626"/>
+      <stop offset=".58" stop-color="#78664f"/>
+      <stop offset="1" stop-color="#111416"/>
+    </linearGradient>
+    <radialGradient id="horizon" cx=".54" cy=".54" r=".68">
+      <stop stop-color="#f1d4a6" stop-opacity=".8"/>
+      <stop offset=".28" stop-color="#bc976c" stop-opacity=".4"/>
+      <stop offset="1" stop-color="#17191a" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cloudFar" x1="960" y1="540" x2="960" y2="880" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ded3c4" stop-opacity=".9"/>
+      <stop offset=".2" stop-color="#a99e92" stop-opacity=".88"/>
+      <stop offset=".72" stop-color="#5a5856" stop-opacity=".82"/>
+      <stop offset="1" stop-color="#25282a" stop-opacity=".9"/>
+    </linearGradient>
+    <linearGradient id="cloudNear" x1="960" y1="685" x2="960" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#eee3d5" stop-opacity=".92"/>
+      <stop offset=".13" stop-color="#c8bcae" stop-opacity=".93"/>
+      <stop offset=".48" stop-color="#6c6863" stop-opacity=".94"/>
+      <stop offset="1" stop-color="#191c1f"/>
+    </linearGradient>
+    <linearGradient id="goldEdge" x1="980" y1="550" x2="980" y2="730" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#ffe5bd" stop-opacity=".95"/>
+      <stop offset=".4" stop-color="#e0bd91" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#d0af82" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="cloudEdge" x="-6%" y="-12%" width="112%" height="130%" color-interpolation-filters="sRGB">
+      <feTurbulence type="fractalNoise" baseFrequency=".008 .032" numOctaves="3" seed="18" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="18" xChannelSelector="R" yChannelSelector="G" result="rough"/>
+      <feGaussianBlur in="rough" stdDeviation="2.4"/>
+    </filter>
+    <filter id="mist" x="-20%" y="-60%" width="140%" height="220%">
+      <feGaussianBlur stdDeviation="22"/>
+    </filter>
+    <filter id="cloudTexture" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency=".035 .085" numOctaves="2" seed="11" result="noise"/>
+      <feColorMatrix in="noise" type="saturate" values="0" result="gray"/>
+      <feComponentTransfer in="gray"><feFuncA type="table" tableValues="0 .15 .24 .16"/></feComponentTransfer>
+    </filter>
+  </defs>
+  <path fill="url(#sky)" d="M0 0h1920v1080H0z"/>
+  <path fill="url(#horizon)" d="M0 0h1920v1080H0z"/>
+  <ellipse cx="1050" cy="620" rx="1040" ry="76" fill="#f2d7b2" fill-opacity=".3" filter="url(#mist)"/>
+  <path fill="url(#cloudFar)" filter="url(#cloudEdge)" d="M-80 700c28-24 55-37 91-37 17-47 75-69 119-37 39-47 111-49 150-3 39-40 98-42 137-4 45-42 107-37 144 8 46-46 118-43 153 4 45-37 103-33 145 13 45-45 116-34 147 12 42-42 114-37 149 9 47-42 114-34 149 13 41-43 111-33 145 17 36-38 102-25 135 20 41-36 101-23 134 21 41-32 98-17 129 23v393H-80V700Z"/>
+  <path fill="url(#goldEdge)" d="M-70 694c31-28 64-42 99-37 14-46 68-67 113-40 36-44 105-47 144-2 42-36 91-35 133-1 43-38 103-35 144 4 45-42 106-38 148 7 42-35 96-29 137 9 48-39 106-34 146 8 42-40 107-35 148 7 42-39 102-34 143 9 43-39 106-30 147 11 40-32 98-23 133 18 41-31 91-15 120 24 46-26 85-15 137 20v76H-70V694Z" opacity=".56"/>
+  <path fill="url(#cloudNear)" filter="url(#cloudEdge)" d="M-100 806c35-23 67-28 99-17 34-55 103-67 149-20 40-45 108-48 151-4 43-40 107-37 148 9 49-43 116-36 153 13 43-47 111-41 151 9 43-40 105-34 148 13 44-38 115-29 150 22 50-39 117-28 151 26 39-35 105-25 138 27 37-37 103-20 133 30 41-28 99-11 128 36 41-26 92-10 127 39v286H-100V806Z"/>
+  <path fill="#f4eadb" fill-opacity=".16" filter="url(#cloudTexture)" d="M0 600h1920v480H0z"/>
+  <path fill="#0b0d0f" fill-opacity=".39" d="M0 1011c223-72 432-63 668-17 264 51 491 82 745 24 191-44 343-53 507-18v98H0v-87Z"/>
+</svg>
